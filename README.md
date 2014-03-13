@@ -1,2 +1,2 @@
-mongo-browser
+live-mongo
 =============
