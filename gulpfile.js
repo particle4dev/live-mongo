@@ -17,10 +17,17 @@ gulp.task('mocha', function () {
         });
 });
 
+// Lint Task
+gulp.task('lint', function() {
+    gulp.src('./src/*.js')
+        .pipe(jshint())
+        .pipe(jshint.reporter('default'));
+});
+
 // Watch Files For Changes
 gulp.task('watch', function() {
-    gulp.watch('./test/*.js', ['mocha']);
+    gulp.watch(['./test/*.js', './src/*.js'], ['lint', 'mocha']);
 });
 
 // Default Task
-gulp.task('default', ['mocha', 'watch']);
+gulp.task('default', ['lint', 'mocha', 'watch']);
