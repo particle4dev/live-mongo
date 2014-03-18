@@ -25,3 +25,7 @@ live-mongo
     ]
 }
 > rs.initiate(cfg)
+
+https://github.com/TorchlightSoftware/mongo-watch
+
+./test.sh

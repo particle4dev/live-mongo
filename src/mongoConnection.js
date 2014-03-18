@@ -52,8 +52,12 @@ MongoConnection.prototype = {
         });
     },
 
-    _getCollection: function(){
-
+    _getCollection: function(name, callback){
+        var self = this;
+        self._asyncDbCall(function(){
+            var collection = self._db.collection(name);
+            callback(collection);
+        });
     }
 };
 

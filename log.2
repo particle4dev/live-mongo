@@ -329,3 +329,388 @@ Wed Mar 12 10:34:51.487 [conn101] end connection 127.0.0.1:32934 (1 connection n
 Wed Mar 12 10:34:51.487 [conn100] end connection 127.0.0.1:32931 (1 connection now open)
 Wed Mar 12 10:34:51.613 [signalProcessingThread] shutdown: removing fs lock...
 Wed Mar 12 10:34:51.613 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Tue Mar 18 17:08:54.421 [initandlisten] MongoDB starting : pid=6888 port=27002 dbpath=/home/steve/study/mongodb/connect/d2 64-bit host=p4d-Vostro-270
+Tue Mar 18 17:08:54.421 [initandlisten] db version v2.4.9
+Tue Mar 18 17:08:54.421 [initandlisten] git version: 52fe0d21959e32a5bdbecdc62057db386e4e029c
+Tue Mar 18 17:08:54.421 [initandlisten] build info: Linux ip-10-2-29-40 2.6.21.7-2.ec2.v1.2.fc8xen #1 SMP Fri Nov 20 17:48:28 EST 2009 x86_64 BOOST_LIB_VERSION=1_49
+Tue Mar 18 17:08:54.421 [initandlisten] allocator: tcmalloc
+Tue Mar 18 17:08:54.421 [initandlisten] options: { dbpath: "d2", fork: true, logappend: true, logpath: "log.2", oplogSize: 50, port: 27002, replSet: "abc" }
+Tue Mar 18 17:08:54.511 [initandlisten] journal dir=/home/steve/study/mongodb/connect/d2/journal
+Tue Mar 18 17:08:54.512 [initandlisten] recover : no journal files present, no recovery needed
+Tue Mar 18 17:08:54.673 [websvr] admin web console waiting for connections on port 28002
+Tue Mar 18 17:08:54.673 [initandlisten] waiting for connections on port 27002
+Tue Mar 18 17:08:54.680 [rsStart] replSet I am localhost:27002
+Tue Mar 18 17:08:54.680 [rsHealthPoll] couldn't connect to localhost:27003: couldn't connect to server localhost:27003
+Tue Mar 18 17:08:54.681 [rsHealthPoll] couldn't connect to localhost:27003: couldn't connect to server localhost:27003
+Tue Mar 18 17:08:54.681 [rsHealthPoll] replset info localhost:27001 thinks that we are down
+Tue Mar 18 17:08:54.681 [rsHealthPoll] replSet member localhost:27001 is up
+Tue Mar 18 17:08:54.681 [rsHealthPoll] replSet member localhost:27001 is now in state STARTUP2
+Tue Mar 18 17:08:54.681 [rsHealthPoll] replset info localhost:27003 heartbeat failed, retrying
+Tue Mar 18 17:08:54.681 [rsHealthPoll] couldn't connect to localhost:27003: couldn't connect to server localhost:27003
+Tue Mar 18 17:08:54.681 [rsHealthPoll] couldn't connect to localhost:27003: couldn't connect to server localhost:27003
+Tue Mar 18 17:08:54.681 [rsHealthPoll] couldn't connect to localhost:27003: couldn't connect to server localhost:27003
+Tue Mar 18 17:08:54.681 [rsHealthPoll] replSet info localhost:27003 is down (or slow to respond): 
+Tue Mar 18 17:08:54.681 [rsHealthPoll] replSet member localhost:27003 is now in state DOWN
+Tue Mar 18 17:08:54.734 [rsStart] replSet STARTUP2
+Tue Mar 18 17:08:55.734 [rsSync] replSet SECONDARY
+Tue Mar 18 17:08:56.418 [initandlisten] connection accepted from 127.0.0.1:60100 #1 (1 connection now open)
+Tue Mar 18 17:08:56.418 [conn1] end connection 127.0.0.1:60100 (0 connections now open)
+Tue Mar 18 17:08:56.418 [initandlisten] connection accepted from 127.0.0.1:60101 #2 (1 connection now open)
+Tue Mar 18 17:08:56.681 [rsHealthPoll] replSet member localhost:27001 is now in state SECONDARY
+Tue Mar 18 17:08:56.681 [rsMgr] not electing self, localhost:27001 would veto with 'I don't think localhost:27002 is electable'
+Tue Mar 18 17:08:56.682 [rsHealthPoll] replset info localhost:27003 thinks that we are down
+Tue Mar 18 17:08:56.682 [rsHealthPoll] replSet member localhost:27003 is up
+Tue Mar 18 17:08:56.682 [rsHealthPoll] replSet member localhost:27003 is now in state SECONDARY
+Tue Mar 18 17:08:56.682 [rsMgr] not electing self, localhost:27003 would veto with 'I don't think localhost:27002 is electable'
+Tue Mar 18 17:08:57.022 [initandlisten] connection accepted from 127.0.0.1:60104 #3 (2 connections now open)
+Tue Mar 18 17:09:02.419 [conn2] replSet info voting yea for localhost:27001 (0)
+Tue Mar 18 17:09:03.497 [rsMgr] not electing self, localhost:27001 would veto with 'I am already primary, localhost:27002 can try again once I've stepped down'
+Tue Mar 18 17:09:04.682 [rsHealthPoll] replSet member localhost:27001 is now in state PRIMARY
+Tue Mar 18 17:09:04.735 [rsBackgroundSync] replSet syncing to: localhost:27001
+Tue Mar 18 17:09:04.757 [rsSyncNotifier] replset setting oplog notifier to localhost:27001
+Tue Mar 18 17:09:08.420 [conn2] end connection 127.0.0.1:60101 (1 connection now open)
+Tue Mar 18 17:09:08.420 [initandlisten] connection accepted from 127.0.0.1:60109 #4 (3 connections now open)
+Tue Mar 18 17:09:25.027 [conn3] end connection 127.0.0.1:60104 (1 connection now open)
+Tue Mar 18 17:09:25.027 [initandlisten] connection accepted from 127.0.0.1:60114 #5 (3 connections now open)
+Tue Mar 18 17:09:38.424 [conn4] end connection 127.0.0.1:60109 (1 connection now open)
+Tue Mar 18 17:09:38.424 [initandlisten] connection accepted from 127.0.0.1:60115 #6 (3 connections now open)
+Tue Mar 18 17:09:55.032 [conn5] end connection 127.0.0.1:60114 (1 connection now open)
+Tue Mar 18 17:09:55.032 [initandlisten] connection accepted from 127.0.0.1:60120 #7 (3 connections now open)
+Tue Mar 18 17:10:08.430 [conn6] end connection 127.0.0.1:60115 (1 connection now open)
+Tue Mar 18 17:10:08.430 [initandlisten] connection accepted from 127.0.0.1:60127 #8 (3 connections now open)
+Tue Mar 18 17:10:25.037 [conn7] end connection 127.0.0.1:60120 (1 connection now open)
+Tue Mar 18 17:10:25.037 [initandlisten] connection accepted from 127.0.0.1:60134 #9 (3 connections now open)
+
+
+***** SERVER RESTARTED *****
+
+
+Tue Mar 18 17:10:30.991 [initandlisten] MongoDB starting : pid=7121 port=27002 dbpath=/home/steve/study/mongodb/connect/d2 64-bit host=p4d-Vostro-270
+Tue Mar 18 17:10:30.991 [initandlisten] db version v2.4.9
+Tue Mar 18 17:10:30.991 [initandlisten] git version: 52fe0d21959e32a5bdbecdc62057db386e4e029c
+Tue Mar 18 17:10:30.991 [initandlisten] build info: Linux ip-10-2-29-40 2.6.21.7-2.ec2.v1.2.fc8xen #1 SMP Fri Nov 20 17:48:28 EST 2009 x86_64 BOOST_LIB_VERSION=1_49
+Tue Mar 18 17:10:30.991 [initandlisten] allocator: tcmalloc
+Tue Mar 18 17:10:30.991 [initandlisten] options: { dbpath: "d2", fork: true, logappend: true, logpath: "log.2", oplogSize: 50, port: 27002, replSet: "abc" }
+Tue Mar 18 17:10:30.992 [initandlisten] exception in initAndListen: 10310 Unable to lock file: /home/steve/study/mongodb/connect/d2/mongod.lock. Is a mongod instance already running?, terminating
+Tue Mar 18 17:10:30.992 dbexit: 
+Tue Mar 18 17:10:30.992 [initandlisten] shutdown: going to close listening sockets...
+Tue Mar 18 17:10:30.992 [initandlisten] shutdown: going to flush diaglog...
+Tue Mar 18 17:10:30.992 [initandlisten] shutdown: going to close sockets...
+Tue Mar 18 17:10:30.992 [initandlisten] shutdown: waiting for fs preallocator...
+Tue Mar 18 17:10:30.992 [initandlisten] shutdown: lock for final commit...
+Tue Mar 18 17:10:30.992 [initandlisten] shutdown: final commit...
+Tue Mar 18 17:10:30.992 [initandlisten] shutdown: closing all files...
+Tue Mar 18 17:10:30.992 [initandlisten] closeAllFiles() finished
+Tue Mar 18 17:10:30.992 dbexit: really exiting now
+Tue Mar 18 17:10:38.435 [conn8] end connection 127.0.0.1:60127 (1 connection now open)
+Tue Mar 18 17:10:38.435 [initandlisten] connection accepted from 127.0.0.1:60137 #10 (3 connections now open)
+Tue Mar 18 17:10:55.042 [conn9] end connection 127.0.0.1:60134 (1 connection now open)
+Tue Mar 18 17:10:55.042 [initandlisten] connection accepted from 127.0.0.1:60142 #11 (3 connections now open)
+Tue Mar 18 17:11:08.440 [conn10] end connection 127.0.0.1:60137 (1 connection now open)
+Tue Mar 18 17:11:08.440 [initandlisten] connection accepted from 127.0.0.1:60149 #12 (2 connections now open)
+Tue Mar 18 17:11:25.046 [conn11] end connection 127.0.0.1:60142 (1 connection now open)
+Tue Mar 18 17:11:25.046 [initandlisten] connection accepted from 127.0.0.1:60164 #13 (3 connections now open)
+Tue Mar 18 17:11:38.444 [conn12] end connection 127.0.0.1:60149 (1 connection now open)
+Tue Mar 18 17:11:38.444 [initandlisten] connection accepted from 127.0.0.1:60165 #14 (3 connections now open)
+Tue Mar 18 17:11:55.051 [conn13] end connection 127.0.0.1:60164 (1 connection now open)
+Tue Mar 18 17:11:55.051 [initandlisten] connection accepted from 127.0.0.1:60170 #15 (3 connections now open)
+Tue Mar 18 17:12:08.449 [conn14] end connection 127.0.0.1:60165 (1 connection now open)
+Tue Mar 18 17:12:08.449 [initandlisten] connection accepted from 127.0.0.1:60173 #16 (3 connections now open)
+Tue Mar 18 17:12:25.055 [conn15] end connection 127.0.0.1:60170 (1 connection now open)
+Tue Mar 18 17:12:25.055 [initandlisten] connection accepted from 127.0.0.1:60186 #17 (3 connections now open)
+Tue Mar 18 17:12:38.454 [conn16] end connection 127.0.0.1:60173 (1 connection now open)
+Tue Mar 18 17:12:38.454 [initandlisten] connection accepted from 127.0.0.1:60188 #18 (3 connections now open)
+Tue Mar 18 17:12:55.060 [conn17] end connection 127.0.0.1:60186 (1 connection now open)
+Tue Mar 18 17:12:55.060 [initandlisten] connection accepted from 127.0.0.1:60194 #19 (3 connections now open)
+Tue Mar 18 17:13:08.459 [conn18] end connection 127.0.0.1:60188 (1 connection now open)
+Tue Mar 18 17:13:08.459 [initandlisten] connection accepted from 127.0.0.1:60197 #20 (3 connections now open)
+Tue Mar 18 17:13:25.064 [conn19] end connection 127.0.0.1:60194 (1 connection now open)
+Tue Mar 18 17:13:25.064 [initandlisten] connection accepted from 127.0.0.1:60202 #21 (3 connections now open)
+Tue Mar 18 17:13:38.464 [conn20] end connection 127.0.0.1:60197 (1 connection now open)
+Tue Mar 18 17:13:38.464 [initandlisten] connection accepted from 127.0.0.1:60203 #22 (3 connections now open)
+Tue Mar 18 17:13:55.069 [conn21] end connection 127.0.0.1:60202 (1 connection now open)
+Tue Mar 18 17:13:55.069 [initandlisten] connection accepted from 127.0.0.1:60208 #23 (3 connections now open)
+Tue Mar 18 17:14:08.469 [conn22] end connection 127.0.0.1:60203 (1 connection now open)
+Tue Mar 18 17:14:08.469 [initandlisten] connection accepted from 127.0.0.1:60209 #24 (3 connections now open)
+Tue Mar 18 17:14:25.074 [conn23] end connection 127.0.0.1:60208 (1 connection now open)
+Tue Mar 18 17:14:25.075 [initandlisten] connection accepted from 127.0.0.1:60214 #25 (2 connections now open)
+Tue Mar 18 17:14:38.474 [conn24] end connection 127.0.0.1:60209 (1 connection now open)
+Tue Mar 18 17:14:38.474 [initandlisten] connection accepted from 127.0.0.1:60218 #26 (3 connections now open)
+Tue Mar 18 17:14:55.079 [conn25] end connection 127.0.0.1:60214 (1 connection now open)
+Tue Mar 18 17:14:55.079 [initandlisten] connection accepted from 127.0.0.1:60226 #27 (3 connections now open)
+Tue Mar 18 17:15:08.479 [conn26] end connection 127.0.0.1:60218 (1 connection now open)
+Tue Mar 18 17:15:08.479 [initandlisten] connection accepted from 127.0.0.1:60227 #28 (3 connections now open)
+
+
+***** SERVER RESTARTED *****
+
+
+Tue Mar 18 17:15:21.499 [initandlisten] MongoDB starting : pid=7388 port=27002 dbpath=/home/steve/study/mongodb/connect/d2 64-bit host=p4d-Vostro-270
+Tue Mar 18 17:15:21.499 [initandlisten] db version v2.4.9
+Tue Mar 18 17:15:21.499 [initandlisten] git version: 52fe0d21959e32a5bdbecdc62057db386e4e029c
+Tue Mar 18 17:15:21.499 [initandlisten] build info: Linux ip-10-2-29-40 2.6.21.7-2.ec2.v1.2.fc8xen #1 SMP Fri Nov 20 17:48:28 EST 2009 x86_64 BOOST_LIB_VERSION=1_49
+Tue Mar 18 17:15:21.499 [initandlisten] allocator: tcmalloc
+Tue Mar 18 17:15:21.499 [initandlisten] options: { dbpath: "d2", fork: true, logappend: true, logpath: "log.2", oplogSize: 50, port: 27002, replSet: "abc" }
+Tue Mar 18 17:15:21.499 [initandlisten] exception in initAndListen: 10310 Unable to lock file: /home/steve/study/mongodb/connect/d2/mongod.lock. Is a mongod instance already running?, terminating
+Tue Mar 18 17:15:21.499 dbexit: 
+Tue Mar 18 17:15:21.499 [initandlisten] shutdown: going to close listening sockets...
+Tue Mar 18 17:15:21.499 [initandlisten] shutdown: going to flush diaglog...
+Tue Mar 18 17:15:21.499 [initandlisten] shutdown: going to close sockets...
+Tue Mar 18 17:15:21.499 [initandlisten] shutdown: waiting for fs preallocator...
+Tue Mar 18 17:15:21.499 [initandlisten] shutdown: lock for final commit...
+Tue Mar 18 17:15:21.499 [initandlisten] shutdown: final commit...
+Tue Mar 18 17:15:21.499 [initandlisten] shutdown: closing all files...
+Tue Mar 18 17:15:21.499 [initandlisten] closeAllFiles() finished
+Tue Mar 18 17:15:21.499 dbexit: really exiting now
+Tue Mar 18 17:15:25.083 [conn27] end connection 127.0.0.1:60226 (1 connection now open)
+Tue Mar 18 17:15:25.083 [initandlisten] connection accepted from 127.0.0.1:60235 #29 (3 connections now open)
+Tue Mar 18 17:15:38.484 [conn28] end connection 127.0.0.1:60227 (1 connection now open)
+Tue Mar 18 17:15:38.484 [initandlisten] connection accepted from 127.0.0.1:60237 #30 (3 connections now open)
+Tue Mar 18 17:15:55.087 [conn29] end connection 127.0.0.1:60235 (1 connection now open)
+Tue Mar 18 17:15:55.087 [initandlisten] connection accepted from 127.0.0.1:60242 #31 (3 connections now open)
+Tue Mar 18 17:16:08.488 [conn30] end connection 127.0.0.1:60237 (1 connection now open)
+Tue Mar 18 17:16:08.489 [initandlisten] connection accepted from 127.0.0.1:60245 #32 (3 connections now open)
+Tue Mar 18 17:16:21.228 [conn32] end connection 127.0.0.1:60245 (1 connection now open)
+Tue Mar 18 17:16:21.327 [rsBackgroundSync] replSet sync source problem: 10278 dbclient error communicating with server: localhost:27001
+Tue Mar 18 17:16:21.327 [rsBackgroundSync] replSet syncing to: localhost:27001
+Tue Mar 18 17:16:21.327 [rsBackgroundSync] repl: couldn't connect to server localhost:27001
+Tue Mar 18 17:16:22.750 [rsHealthPoll] DBClientCursor::init call() failed
+Tue Mar 18 17:16:22.751 [rsHealthPoll] replset info localhost:27001 heartbeat failed, retrying
+Tue Mar 18 17:16:22.751 [rsHealthPoll] replSet info localhost:27001 is down (or slow to respond): 
+Tue Mar 18 17:16:22.751 [rsHealthPoll] replSet member localhost:27001 is now in state DOWN
+Tue Mar 18 17:16:22.751 [rsMgr] not electing self, localhost:27003 would veto with 'localhost:27002 is trying to elect itself but localhost:27001 is already primary and more up-to-date'
+Tue Mar 18 17:16:22.751 [rsMgr] not electing self, localhost:27003 would veto with 'localhost:27002 is trying to elect itself but localhost:27001 is already primary and more up-to-date'
+Tue Mar 18 17:16:23.092 [conn31] replSet info voting yea for localhost:27003 (2)
+Tue Mar 18 17:16:24.751 [rsHealthPoll] replSet member localhost:27003 is now in state PRIMARY
+Tue Mar 18 17:16:24.751 [rsHealthPoll] replset info localhost:27001 heartbeat failed, retrying
+Tue Mar 18 17:16:25.092 [conn31] end connection 127.0.0.1:60242 (0 connections now open)
+Tue Mar 18 17:16:25.092 [initandlisten] connection accepted from 127.0.0.1:60254 #33 (1 connection now open)
+Tue Mar 18 17:16:25.348 [rsBackgroundSync] replSet syncing to: localhost:27003
+Tue Mar 18 17:16:25.669 [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+Tue Mar 18 17:16:25.669 [signalProcessingThread] now exiting
+Tue Mar 18 17:16:25.669 dbexit: 
+Tue Mar 18 17:16:25.669 [signalProcessingThread] shutdown: going to close listening sockets...
+Tue Mar 18 17:16:25.669 [signalProcessingThread] closing listening socket: 9
+Tue Mar 18 17:16:25.669 [signalProcessingThread] closing listening socket: 10
+Tue Mar 18 17:16:25.669 [signalProcessingThread] closing listening socket: 11
+Tue Mar 18 17:16:25.669 [signalProcessingThread] removing socket file: /tmp/mongodb-27002.sock
+Tue Mar 18 17:16:25.669 [signalProcessingThread] shutdown: going to flush diaglog...
+Tue Mar 18 17:16:25.669 [signalProcessingThread] shutdown: going to close sockets...
+Tue Mar 18 17:16:25.669 [signalProcessingThread] shutdown: waiting for fs preallocator...
+Tue Mar 18 17:16:25.669 [signalProcessingThread] shutdown: lock for final commit...
+Tue Mar 18 17:16:25.669 [signalProcessingThread] shutdown: final commit...
+Tue Mar 18 17:16:25.669 [conn33] end connection 127.0.0.1:60254 (0 connections now open)
+Tue Mar 18 17:16:25.669 [rsBackgroundSync] replSet sync source problem: 10278 dbclient error communicating with server: localhost:27003
+Tue Mar 18 17:16:25.670 [signalProcessingThread] shutdown: closing all files...
+Tue Mar 18 17:16:25.670 [signalProcessingThread] closeAllFiles() finished
+Tue Mar 18 17:16:25.670 [signalProcessingThread] journalCleanup...
+Tue Mar 18 17:16:25.670 [signalProcessingThread] removeJournalFiles
+Tue Mar 18 17:16:25.748 [signalProcessingThread] shutdown: removing fs lock...
+Tue Mar 18 17:16:25.748 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Tue Mar 18 17:16:39.794 [initandlisten] MongoDB starting : pid=7514 port=27002 dbpath=/home/steve/study/mongodb/connect/d2 64-bit host=p4d-Vostro-270
+Tue Mar 18 17:16:39.794 [initandlisten] db version v2.4.9
+Tue Mar 18 17:16:39.794 [initandlisten] git version: 52fe0d21959e32a5bdbecdc62057db386e4e029c
+Tue Mar 18 17:16:39.794 [initandlisten] build info: Linux ip-10-2-29-40 2.6.21.7-2.ec2.v1.2.fc8xen #1 SMP Fri Nov 20 17:48:28 EST 2009 x86_64 BOOST_LIB_VERSION=1_49
+Tue Mar 18 17:16:39.794 [initandlisten] allocator: tcmalloc
+Tue Mar 18 17:16:39.794 [initandlisten] options: { dbpath: "d2", fork: true, logappend: true, logpath: "log.2", oplogSize: 50, port: 27002, replSet: "abc" }
+Tue Mar 18 17:16:39.852 [initandlisten] journal dir=/home/steve/study/mongodb/connect/d2/journal
+Tue Mar 18 17:16:39.852 [initandlisten] recover : no journal files present, no recovery needed
+Tue Mar 18 17:16:39.958 [websvr] admin web console waiting for connections on port 28002
+Tue Mar 18 17:16:39.958 [initandlisten] waiting for connections on port 27002
+Tue Mar 18 17:16:39.974 [rsStart] replSet I am localhost:27002
+Tue Mar 18 17:16:39.975 [rsHealthPoll] couldn't connect to localhost:27003: couldn't connect to server localhost:27003
+Tue Mar 18 17:16:39.975 [rsHealthPoll] couldn't connect to localhost:27003: couldn't connect to server localhost:27003
+Tue Mar 18 17:16:39.975 [rsHealthPoll] replset info localhost:27001 thinks that we are down
+Tue Mar 18 17:16:39.975 [rsHealthPoll] replSet member localhost:27001 is up
+Tue Mar 18 17:16:39.975 [rsHealthPoll] replSet member localhost:27001 is now in state STARTUP2
+Tue Mar 18 17:16:39.975 [rsHealthPoll] replset info localhost:27003 heartbeat failed, retrying
+Tue Mar 18 17:16:39.975 [rsHealthPoll] couldn't connect to localhost:27003: couldn't connect to server localhost:27003
+Tue Mar 18 17:16:39.975 [rsHealthPoll] couldn't connect to localhost:27003: couldn't connect to server localhost:27003
+Tue Mar 18 17:16:39.975 [rsHealthPoll] couldn't connect to localhost:27003: couldn't connect to server localhost:27003
+Tue Mar 18 17:16:39.975 [rsHealthPoll] replSet info localhost:27003 is down (or slow to respond): 
+Tue Mar 18 17:16:39.975 [rsHealthPoll] replSet member localhost:27003 is now in state DOWN
+Tue Mar 18 17:16:39.982 [rsStart] replSet STARTUP2
+Tue Mar 18 17:16:40.203 [initandlisten] connection accepted from 127.0.0.1:60277 #1 (1 connection now open)
+Tue Mar 18 17:16:40.992 [rsSync] replSet SECONDARY
+Tue Mar 18 17:16:41.793 [initandlisten] connection accepted from 127.0.0.1:60280 #2 (2 connections now open)
+Tue Mar 18 17:16:41.793 [conn2] end connection 127.0.0.1:60280 (1 connection now open)
+Tue Mar 18 17:16:41.793 [initandlisten] connection accepted from 127.0.0.1:60281 #3 (3 connections now open)
+Tue Mar 18 17:16:41.975 [rsHealthPoll] replSet member localhost:27001 is now in state SECONDARY
+Tue Mar 18 17:16:41.976 [rsMgr] not electing self, localhost:27001 would veto with 'I don't think localhost:27002 is electable'
+Tue Mar 18 17:16:41.976 [rsHealthPoll] replSet member localhost:27003 is up
+Tue Mar 18 17:16:41.976 [rsHealthPoll] replSet member localhost:27003 is now in state SECONDARY
+Tue Mar 18 17:16:41.977 [rsMgr] not electing self, localhost:27003 would veto with 'I don't think localhost:27002 is electable'
+Tue Mar 18 17:16:47.794 [conn3] replSet info voting yea for localhost:27001 (0)
+Tue Mar 18 17:16:48.272 [rsMgr] replSet not trying to elect self as responded yea to someone else recently
+Tue Mar 18 17:16:49.977 [rsHealthPoll] replSet member localhost:27001 is now in state PRIMARY
+Tue Mar 18 17:16:49.984 [rsBackgroundSync] replSet syncing to: localhost:27001
+Tue Mar 18 17:16:49.993 [rsSyncNotifier] replset setting oplog notifier to localhost:27001
+Tue Mar 18 17:16:53.795 [conn3] end connection 127.0.0.1:60281 (1 connection now open)
+Tue Mar 18 17:16:53.795 [initandlisten] connection accepted from 127.0.0.1:60289 #4 (2 connections now open)
+Tue Mar 18 17:17:08.207 [conn1] end connection 127.0.0.1:60277 (1 connection now open)
+Tue Mar 18 17:17:08.207 [initandlisten] connection accepted from 127.0.0.1:60294 #5 (3 connections now open)
+Tue Mar 18 17:17:23.799 [conn4] end connection 127.0.0.1:60289 (1 connection now open)
+Tue Mar 18 17:17:23.799 [initandlisten] connection accepted from 127.0.0.1:60296 #6 (3 connections now open)
+Tue Mar 18 17:17:38.212 [conn5] end connection 127.0.0.1:60294 (1 connection now open)
+Tue Mar 18 17:17:38.212 [initandlisten] connection accepted from 127.0.0.1:60300 #7 (3 connections now open)
+Tue Mar 18 17:17:53.804 [conn6] end connection 127.0.0.1:60296 (1 connection now open)
+Tue Mar 18 17:17:53.804 [initandlisten] connection accepted from 127.0.0.1:60302 #8 (3 connections now open)
+Tue Mar 18 17:18:08.216 [conn7] end connection 127.0.0.1:60300 (1 connection now open)
+Tue Mar 18 17:18:08.217 [initandlisten] connection accepted from 127.0.0.1:60306 #9 (3 connections now open)
+Tue Mar 18 17:18:23.809 [conn8] end connection 127.0.0.1:60302 (1 connection now open)
+Tue Mar 18 17:18:23.809 [initandlisten] connection accepted from 127.0.0.1:60308 #10 (2 connections now open)
+Tue Mar 18 17:18:38.221 [conn9] end connection 127.0.0.1:60306 (1 connection now open)
+Tue Mar 18 17:18:38.221 [initandlisten] connection accepted from 127.0.0.1:60314 #11 (2 connections now open)
+
+
+***** SERVER RESTARTED *****
+
+
+Tue Mar 18 17:18:48.584 [initandlisten] MongoDB starting : pid=7777 port=27002 dbpath=/home/steve/study/mongodb/connect/d2 64-bit host=p4d-Vostro-270
+Tue Mar 18 17:18:48.584 [initandlisten] db version v2.4.9
+Tue Mar 18 17:18:48.584 [initandlisten] git version: 52fe0d21959e32a5bdbecdc62057db386e4e029c
+Tue Mar 18 17:18:48.584 [initandlisten] build info: Linux ip-10-2-29-40 2.6.21.7-2.ec2.v1.2.fc8xen #1 SMP Fri Nov 20 17:48:28 EST 2009 x86_64 BOOST_LIB_VERSION=1_49
+Tue Mar 18 17:18:48.584 [initandlisten] allocator: tcmalloc
+Tue Mar 18 17:18:48.584 [initandlisten] options: { dbpath: "d2", fork: true, logappend: true, logpath: "log.2", oplogSize: 50, port: 27002, replSet: "abc" }
+Tue Mar 18 17:18:48.584 [initandlisten] exception in initAndListen: 10310 Unable to lock file: /home/steve/study/mongodb/connect/d2/mongod.lock. Is a mongod instance already running?, terminating
+Tue Mar 18 17:18:48.584 dbexit: 
+Tue Mar 18 17:18:48.585 [initandlisten] shutdown: going to close listening sockets...
+Tue Mar 18 17:18:48.585 [initandlisten] shutdown: going to flush diaglog...
+Tue Mar 18 17:18:48.585 [initandlisten] shutdown: going to close sockets...
+Tue Mar 18 17:18:48.585 [initandlisten] shutdown: waiting for fs preallocator...
+Tue Mar 18 17:18:48.585 [initandlisten] shutdown: lock for final commit...
+Tue Mar 18 17:18:48.585 [initandlisten] shutdown: final commit...
+Tue Mar 18 17:18:48.585 [initandlisten] shutdown: closing all files...
+Tue Mar 18 17:18:48.585 [initandlisten] closeAllFiles() finished
+Tue Mar 18 17:18:48.585 dbexit: really exiting now
+Tue Mar 18 17:18:53.813 [conn10] end connection 127.0.0.1:60308 (1 connection now open)
+Tue Mar 18 17:18:53.813 [initandlisten] connection accepted from 127.0.0.1:60317 #12 (3 connections now open)
+Tue Mar 18 17:19:08.226 [conn11] end connection 127.0.0.1:60314 (1 connection now open)
+Tue Mar 18 17:19:08.226 [initandlisten] connection accepted from 127.0.0.1:60321 #13 (3 connections now open)
+Tue Mar 18 17:19:15.092 [conn12] end connection 127.0.0.1:60317 (1 connection now open)
+Tue Mar 18 17:19:15.093 [rsBackgroundSync] replSet sync source problem: 10278 dbclient error communicating with server: localhost:27001
+Tue Mar 18 17:19:15.093 [rsBackgroundSync] replSet syncing to: localhost:27001
+Tue Mar 18 17:19:15.095 [rsBackgroundSync] Socket recv() errno:104 Connection reset by peer 127.0.0.1:27001
+Tue Mar 18 17:19:15.095 [rsBackgroundSync] SocketException: remote: 127.0.0.1:27001 error: 9001 socket exception [RECV_ERROR] server [127.0.0.1:27001] 
+Tue Mar 18 17:19:15.095 [rsBackgroundSync] DBClientCursor::init call() failed
+Tue Mar 18 17:19:15.095 [rsBackgroundSync] replSet sync source problem: 10276 DBClientBase::findN: transport error: localhost:27001 ns: local.oplog.rs query: {}
+Tue Mar 18 17:19:15.095 [rsBackgroundSync] replSet syncing to: localhost:27001
+Tue Mar 18 17:19:15.096 [rsBackgroundSync] repl: couldn't connect to server localhost:27001
+Tue Mar 18 17:19:15.096 [rsBackgroundSync] replSet not trying to sync from localhost:27001, it is vetoed for 10 more seconds
+Tue Mar 18 17:19:15.096 [rsBackgroundSync] replSet not trying to sync from localhost:27001, it is vetoed for 10 more seconds
+Tue Mar 18 17:19:15.999 [rsHealthPoll] DBClientCursor::init call() failed
+Tue Mar 18 17:19:15.999 [rsHealthPoll] replset info localhost:27001 heartbeat failed, retrying
+Tue Mar 18 17:19:16.000 [rsHealthPoll] replSet info localhost:27001 is down (or slow to respond): 
+Tue Mar 18 17:19:16.000 [rsHealthPoll] replSet member localhost:27001 is now in state DOWN
+Tue Mar 18 17:19:16.000 [rsMgr] not electing self, localhost:27003 would veto with 'localhost:27002 is trying to elect itself but localhost:27001 is already primary and more up-to-date'
+Tue Mar 18 17:19:16.622 [conn13] replSet info voting yea for localhost:27003 (2)
+Tue Mar 18 17:19:18.000 [rsHealthPoll] replSet member localhost:27003 is now in state PRIMARY
+Tue Mar 18 17:19:18.000 [rsHealthPoll] replset info localhost:27001 heartbeat failed, retrying
+Tue Mar 18 17:19:18.096 [rsBackgroundSync] replSet syncing to: localhost:27003
+Tue Mar 18 17:19:20.001 [rsHealthPoll] replset info localhost:27001 heartbeat failed, retrying
+Tue Mar 18 17:19:22.001 [rsHealthPoll] replset info localhost:27001 heartbeat failed, retrying
+Tue Mar 18 17:19:23.219 [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+Tue Mar 18 17:19:23.220 [signalProcessingThread] now exiting
+Tue Mar 18 17:19:23.220 dbexit: 
+Tue Mar 18 17:19:23.220 [signalProcessingThread] shutdown: going to close listening sockets...
+Tue Mar 18 17:19:23.220 [signalProcessingThread] closing listening socket: 9
+Tue Mar 18 17:19:23.220 [signalProcessingThread] closing listening socket: 10
+Tue Mar 18 17:19:23.220 [signalProcessingThread] closing listening socket: 11
+Tue Mar 18 17:19:23.220 [signalProcessingThread] removing socket file: /tmp/mongodb-27002.sock
+Tue Mar 18 17:19:23.220 [signalProcessingThread] shutdown: going to flush diaglog...
+Tue Mar 18 17:19:23.220 [signalProcessingThread] shutdown: going to close sockets...
+Tue Mar 18 17:19:23.220 [signalProcessingThread] shutdown: waiting for fs preallocator...
+Tue Mar 18 17:19:23.220 [signalProcessingThread] shutdown: lock for final commit...
+Tue Mar 18 17:19:23.220 [signalProcessingThread] shutdown: final commit...
+Tue Mar 18 17:19:23.220 [conn13] end connection 127.0.0.1:60321 (0 connections now open)
+Tue Mar 18 17:19:23.220 [rsBackgroundSync] replSet sync source problem: 10278 dbclient error communicating with server: localhost:27003
+Tue Mar 18 17:19:23.221 [signalProcessingThread] shutdown: closing all files...
+Tue Mar 18 17:19:23.221 [signalProcessingThread] closeAllFiles() finished
+Tue Mar 18 17:19:23.221 [signalProcessingThread] journalCleanup...
+Tue Mar 18 17:19:23.221 [signalProcessingThread] removeJournalFiles
+Tue Mar 18 17:19:23.280 [signalProcessingThread] shutdown: removing fs lock...
+Tue Mar 18 17:19:23.291 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Tue Mar 18 17:20:02.841 [initandlisten] MongoDB starting : pid=7925 port=27002 dbpath=/home/steve/study/mongodb/connect/d2 64-bit host=p4d-Vostro-270
+Tue Mar 18 17:20:02.841 [initandlisten] db version v2.4.9
+Tue Mar 18 17:20:02.841 [initandlisten] git version: 52fe0d21959e32a5bdbecdc62057db386e4e029c
+Tue Mar 18 17:20:02.841 [initandlisten] build info: Linux ip-10-2-29-40 2.6.21.7-2.ec2.v1.2.fc8xen #1 SMP Fri Nov 20 17:48:28 EST 2009 x86_64 BOOST_LIB_VERSION=1_49
+Tue Mar 18 17:20:02.841 [initandlisten] allocator: tcmalloc
+Tue Mar 18 17:20:02.841 [initandlisten] options: { dbpath: "d2", fork: true, logappend: true, logpath: "log.2", oplogSize: 50, port: 27002, replSet: "abc" }
+Tue Mar 18 17:20:02.896 [initandlisten] journal dir=/home/steve/study/mongodb/connect/d2/journal
+Tue Mar 18 17:20:02.896 [initandlisten] recover : no journal files present, no recovery needed
+Tue Mar 18 17:20:02.987 [initandlisten] waiting for connections on port 27002
+Tue Mar 18 17:20:02.987 [websvr] admin web console waiting for connections on port 28002
+Tue Mar 18 17:20:02.998 [rsStart] replSet I am localhost:27002
+Tue Mar 18 17:20:02.999 [rsHealthPoll] replset info localhost:27001 thinks that we are down
+Tue Mar 18 17:20:02.999 [rsHealthPoll] replSet member localhost:27001 is up
+Tue Mar 18 17:20:02.999 [rsHealthPoll] replSet member localhost:27001 is now in state STARTUP2
+Tue Mar 18 17:20:03.025 [rsStart] replSet STARTUP2
+Tue Mar 18 17:20:04.068 [rsSync] replSet SECONDARY
+Tue Mar 18 17:20:04.828 [initandlisten] connection accepted from 127.0.0.1:60381 #1 (1 connection now open)
+Tue Mar 18 17:20:04.828 [conn1] end connection 127.0.0.1:60381 (0 connections now open)
+Tue Mar 18 17:20:04.828 [initandlisten] connection accepted from 127.0.0.1:60382 #2 (2 connections now open)
+Tue Mar 18 17:20:04.999 [rsHealthPoll] replset info localhost:27003 thinks that we are down
+Tue Mar 18 17:20:04.999 [rsHealthPoll] replSet member localhost:27003 is up
+Tue Mar 18 17:20:04.999 [rsHealthPoll] replSet member localhost:27003 is now in state SECONDARY
+Tue Mar 18 17:20:04.999 [rsHealthPoll] replSet member localhost:27001 is now in state SECONDARY
+Tue Mar 18 17:20:04.999 [rsMgr] not electing self, localhost:27003 would veto with 'I don't think localhost:27002 is electable'
+Tue Mar 18 17:20:04.999 [rsMgr] not electing self, localhost:27003 would veto with 'I don't think localhost:27002 is electable'
+Tue Mar 18 17:20:05.268 [initandlisten] connection accepted from 127.0.0.1:60385 #3 (2 connections now open)
+Tue Mar 18 17:20:10.830 [conn2] replSet info voting yea for localhost:27001 (0)
+Tue Mar 18 17:20:11.065 [rsMgr] replSet not trying to elect self as responded yea to someone else recently
+Tue Mar 18 17:20:13.000 [rsHealthPoll] replSet member localhost:27001 is now in state PRIMARY
+Tue Mar 18 17:20:13.026 [rsBackgroundSync] replSet syncing to: localhost:27001
+Tue Mar 18 17:20:13.069 [rsSyncNotifier] replset setting oplog notifier to localhost:27001
+Tue Mar 18 17:20:16.831 [conn2] end connection 127.0.0.1:60382 (1 connection now open)
+Tue Mar 18 17:20:16.831 [initandlisten] connection accepted from 127.0.0.1:60396 #4 (3 connections now open)
+Tue Mar 18 17:20:33.273 [conn3] end connection 127.0.0.1:60385 (1 connection now open)
+Tue Mar 18 17:20:33.273 [initandlisten] connection accepted from 127.0.0.1:60402 #5 (3 connections now open)
+Tue Mar 18 17:20:46.836 [conn4] end connection 127.0.0.1:60396 (1 connection now open)
+Tue Mar 18 17:20:46.836 [initandlisten] connection accepted from 127.0.0.1:60403 #6 (3 connections now open)
+Tue Mar 18 17:21:03.277 [conn5] end connection 127.0.0.1:60402 (1 connection now open)
+Tue Mar 18 17:21:03.277 [initandlisten] connection accepted from 127.0.0.1:60410 #7 (2 connections now open)
+Tue Mar 18 17:21:16.840 [conn6] end connection 127.0.0.1:60403 (1 connection now open)
+Tue Mar 18 17:21:16.840 [initandlisten] connection accepted from 127.0.0.1:60411 #8 (3 connections now open)
+Tue Mar 18 17:21:33.282 [conn7] end connection 127.0.0.1:60410 (1 connection now open)
+Tue Mar 18 17:21:33.282 [initandlisten] connection accepted from 127.0.0.1:60419 #9 (3 connections now open)
+Tue Mar 18 17:21:46.845 [conn8] end connection 127.0.0.1:60411 (1 connection now open)
+Tue Mar 18 17:21:46.845 [initandlisten] connection accepted from 127.0.0.1:60422 #10 (3 connections now open)
+Tue Mar 18 17:22:03.287 [conn9] end connection 127.0.0.1:60419 (1 connection now open)
+Tue Mar 18 17:22:03.287 [initandlisten] connection accepted from 127.0.0.1:60427 #11 (2 connections now open)
+Tue Mar 18 17:22:16.850 [conn10] end connection 127.0.0.1:60422 (1 connection now open)
+Tue Mar 18 17:22:16.850 [initandlisten] connection accepted from 127.0.0.1:60428 #12 (3 connections now open)
+Tue Mar 18 17:22:33.292 [conn11] end connection 127.0.0.1:60427 (1 connection now open)
+Tue Mar 18 17:22:33.292 [initandlisten] connection accepted from 127.0.0.1:60433 #13 (3 connections now open)
+Tue Mar 18 17:22:46.855 [conn12] end connection 127.0.0.1:60428 (1 connection now open)
+Tue Mar 18 17:22:46.855 [initandlisten] connection accepted from 127.0.0.1:60437 #14 (3 connections now open)
+Tue Mar 18 17:22:48.922 [initandlisten] connection accepted from 127.0.0.1:60452 #15 (3 connections now open)
+Tue Mar 18 17:22:48.922 [initandlisten] connection accepted from 127.0.0.1:60453 #16 (4 connections now open)
+Tue Mar 18 17:22:48.924 [initandlisten] connection accepted from 127.0.0.1:60454 #17 (5 connections now open)
+Tue Mar 18 17:22:48.924 [initandlisten] connection accepted from 127.0.0.1:60455 #18 (6 connections now open)
+Tue Mar 18 17:22:48.924 [initandlisten] connection accepted from 127.0.0.1:60456 #19 (7 connections now open)
+Tue Mar 18 17:23:03.297 [conn13] end connection 127.0.0.1:60433 (6 connections now open)
+Tue Mar 18 17:23:03.297 [initandlisten] connection accepted from 127.0.0.1:60465 #20 (7 connections now open)
+Tue Mar 18 17:23:16.860 [conn14] end connection 127.0.0.1:60437 (6 connections now open)
+Tue Mar 18 17:23:16.860 [initandlisten] connection accepted from 127.0.0.1:60466 #21 (7 connections now open)
+Tue Mar 18 17:23:33.302 [conn20] end connection 127.0.0.1:60465 (6 connections now open)
+Tue Mar 18 17:23:33.302 [initandlisten] connection accepted from 127.0.0.1:60471 #22 (8 connections now open)
+Tue Mar 18 17:23:40.958 [conn15] end connection 127.0.0.1:60452 (6 connections now open)
+Tue Mar 18 17:23:40.958 [conn16] end connection 127.0.0.1:60453 (6 connections now open)
+Tue Mar 18 17:23:40.959 [conn17] end connection 127.0.0.1:60454 (4 connections now open)
+Tue Mar 18 17:23:40.959 [conn18] end connection 127.0.0.1:60455 (3 connections now open)
+Tue Mar 18 17:23:40.959 [conn19] end connection 127.0.0.1:60456 (2 connections now open)
