@@ -1,7 +1,7 @@
 {
-  "name": "connect",
+  "name": "live-mongodb",
   "version": "0.0.0",
-  "description": "connect to mongodb from node",
+  "description": "Listening to MongoDB live changes using oplog",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
