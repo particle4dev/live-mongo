@@ -26,6 +26,9 @@ live-mongo
 }
 > rs.initiate(cfg)
 
+https://github.com/meteor/meteor/tree/devel/packages/mongo-livedata
+https://github.com/cayasso/mongo-oplog
 https://github.com/TorchlightSoftware/mongo-watch
+https://github.com/arunoda/meteor-smart-collections
 
 ./test.sh
