@@ -1,4 +1,9 @@
-var MongoConnection = require('./mongoConnection');
+require('./oplogDriver');
+
+var _ = require('lodash');
+var Collection = require('./collection');
+var config = require('./config');
 module.exports = {
-	MongoConnection: MongoConnection
+	Collection: Collection,
+	config: config
 };

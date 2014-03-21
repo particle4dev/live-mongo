@@ -21,6 +21,9 @@ var connectPromise = function(url){
     return deferred.promise;
 };
 
+/**
+ * singleton pattern (one connect)
+ */
 MongoConnection.prototype = {
     constructor: MongoConnection,
 

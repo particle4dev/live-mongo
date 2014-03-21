@@ -1,10 +1,10 @@
 var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
-var l = require('../index');
+var livemongo = require('../index');
 
 suite("mongoConnection.js", function() {
     test("connect", function() {
-        var newConnect = new l.MongoConnection('mongodb://localhost:27017/blog');
+        //var newConnect = new livemongo.MongoConnection('mongodb://localhost:27017/blog');
         //var newConnect = new l.MongoConnection('mongodb://localhost:0/blog');
         //var newConnect = new l.MongoConnection('');
         /**
@@ -56,6 +56,17 @@ suite("mongoConnection.js", function() {
         */
     });
 
-    test("replset test", function() {
+    test("config", function() {
+        livemongo.config({
+            'b': 'a'
+        });
+        assert.equal(livemongo.config('b'), 'a');
+        livemongo.config('b', null);
+        assert.equal(livemongo.config('b'), null);
+    });
+
+    test("collection", function() {
+        var Account = new livemongo.Collection('account');
+        var Log = new livemongo.Collection('log');
     });
 });
