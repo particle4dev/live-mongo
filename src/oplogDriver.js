@@ -1,7 +1,7 @@
 var MongoClient = require('mongodb').MongoClient;
 OPLOG_COLLECTION = 'oplog.rs';
 REPLSET_COLLECTION = 'system.replset';
-
+/**
 MongoClient.connect('mongodb://localhost:27001/local', function(err, db){
     if (err) throw err;
     var collection = db.collection(OPLOG_COLLECTION);
@@ -13,3 +13,4 @@ MongoClient.connect('mongodb://localhost:27001/local', function(err, db){
         }
     });
 });
+*/

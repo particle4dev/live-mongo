@@ -1,5 +1,5 @@
 var assert = require('assert');
-var livemongo = require('../index');
+var livemongo = require('../../index');
 
 suite("matcher - sorter", function() {
     

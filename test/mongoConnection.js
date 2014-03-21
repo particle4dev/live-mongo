@@ -15,6 +15,7 @@ suite("mongoConnection.js", function() {
         */
     });
 
+    /**
     test("config", function() {
         livemongo.config({
             'b': 'a'
@@ -23,5 +24,5 @@ suite("mongoConnection.js", function() {
         livemongo.config('b', null);
         assert.equal(livemongo.config('b'), null);
     });
-
+    */
 });
