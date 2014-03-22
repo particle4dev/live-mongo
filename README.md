@@ -28,10 +28,11 @@ live-mongo
 
     > mongo --port 27001
     > db.isMaster()
-
+<!--
+    https://github.com/mongodb/mongo/tree/master/src/mongo/db/matcher
     https://github.com/meteor/meteor/tree/devel/packages/mongo-livedata
     https://github.com/cayasso/mongo-oplog
     https://github.com/TorchlightSoftware/mongo-watch
     https://github.com/arunoda/meteor-smart-collections
-
+-->
     ./test.sh

@@ -4,7 +4,7 @@ var livemongo = require('../index');
 suite("livemongo", function() {
 
     test("object", function() {
-        console.log(livemongo);
+        //console.log(livemongo);
     });
 
 });
