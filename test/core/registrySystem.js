@@ -4,20 +4,21 @@ var livemongo = require('../../index');
 suite("core - registrysystem", function() {
     
     test("simple", function() {
-        var reg = new livemongo.core.RegistrySystem();
-        assert.equal(reg.get('a'), null);
-        assert.equal(reg.set('a', 'b'), true);
-        assert.equal(reg.get('a'), 'b');
-        reg.remove('a')
-        assert.equal(reg.get('a'), null);
-        assert.equal(reg.set('a', 'c'), true);
+        var rs1 = livemongo.core.RegistrySystem.getInstance();
+        var rs2 = livemongo.core.RegistrySystem.getInstance();
+        assert.equal(rs1.get('a'), null);
+        assert.equal(rs2.set('a', 'b'), true);
+        assert.equal(rs1.get('a'), 'b');
+        rs1.remove('a')
+        assert.equal(rs2.get('a'), null);
+        assert.equal(rs1.set('a', 'c'), true);
         try {
-            reg.set('a', 'c');
+            rs2.set('a', 'c');
         }
         catch(e){
             assert.equal(e.message, 'Unable to set a. Already set.');
         }
-        assert.equal(reg.get('a'), 'c');
+        assert.equal(rs1.get('a'), 'c');
     });
 
 });

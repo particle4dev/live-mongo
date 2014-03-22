@@ -1,12 +1,11 @@
-require('./oplogDriver');
-
-var _ = require('lodash');
-var Collection = require('./collection');
 var config = require('./config');
-var core =  require('./core');
+var core = require('./core');
+var selection = require('./selection');
+var mongodb = require('./mongodb');
 
 module.exports = {
-	Collection: Collection,
-	config: config,
-	core: core
+    config: config,
+    core: core,
+    selection: selection,
+    mongodb: mongodb
 };
