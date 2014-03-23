@@ -34,5 +34,11 @@ live-mongo
     https://github.com/cayasso/mongo-oplog
     https://github.com/TorchlightSoftware/mongo-watch
     https://github.com/arunoda/meteor-smart-collections
+
+
+    best way to compare two objects in javascript
+        http://stackoverflow.com/questions/1068834/object-comparison-in-javascript
+        http://stackoverflow.com/a/1144249/2104729
+        http://lodash.com/docs#isEqual
 -->
     ./test.sh

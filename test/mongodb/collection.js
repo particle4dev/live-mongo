@@ -4,7 +4,7 @@ var livemongo = require('../index');
 suite("collection", function() {
 
     test("simple", function() {
-        //var Account = new livemongo.Collection('account');
+        var Account = new livemongo.mongodb.Collection('account');
     });
 
 });

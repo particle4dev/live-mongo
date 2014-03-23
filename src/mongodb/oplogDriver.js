@@ -1,6 +1,11 @@
 var MongoClient = require('mongodb').MongoClient;
 OPLOG_COLLECTION = 'oplog.rs';
 REPLSET_COLLECTION = 'system.replset';
+MATCHER_COLLECTION = '__matcher__';
+
+var oplogDriver = function(){
+
+};
 /**
 MongoClient.connect('mongodb://localhost:27001/local', function(err, db){
     if (err) throw err;

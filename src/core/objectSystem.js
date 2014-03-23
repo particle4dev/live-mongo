@@ -2,8 +2,9 @@ var _ = require('lodash');
 var RegistrySystem = require('./registrySystem');
 var utils = require('./utils');
 
-var ObjectSystem = function(){
+var ObjectSystem = function(name){
     this._registry = RegistrySystem.getInstance();
+    this._registry.set(name, this);
 };
 
 _.extend(ObjectSystem.prototype, {

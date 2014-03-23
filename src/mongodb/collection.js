@@ -5,5 +5,4 @@ var Collection = function(name){
 	self._driver = MongodbRemote.defaultMongodbRemoteDriver();
 };
 
-
 module.exports = Collection;
